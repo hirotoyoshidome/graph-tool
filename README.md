@@ -21,3 +21,16 @@ pip3 install pipenv
 pipenv install
 ```
 ※requirements.txtを見て、Pipfile, Pipfile.lockを作成してくれるみたい
+
+
+* 逆に
+
+```
+pipenv lock -r > requires.txt
+```
+でrequirements.txtファイルを作成しておき、
+
+```
+pip3 istall -r requires.txt
+```
+でインストールするのでも良い
